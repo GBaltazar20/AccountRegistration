@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtStudentNo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtContactNo = new System.Windows.Forms.TextBox();
+            this.txtMiddleName = new System.Windows.Forms.TextBox();
+            this.Program = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -56,14 +56,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Student No:";
             // 
-            // label2
+            // label9
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Last Name:";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(69, 90);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 16);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Last Name:";
             // 
             // label3
             // 
@@ -101,12 +101,12 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Contact No:";
             // 
-            // textBox1
+            // txtStudentNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 22);
-            this.textBox1.TabIndex = 6;
+            this.txtStudentNo.Location = new System.Drawing.Point(72, 49);
+            this.txtStudentNo.Name = "txtStudentNo";
+            this.txtStudentNo.Size = new System.Drawing.Size(175, 22);
+            this.txtStudentNo.TabIndex = 6;
             // 
             // label7
             // 
@@ -117,48 +117,53 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Program:";
             // 
-            // textBox2
+            // txtLastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(72, 109);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 22);
-            this.textBox2.TabIndex = 8;
+            this.txtLastName.Location = new System.Drawing.Point(72, 109);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(175, 22);
+            this.txtLastName.TabIndex = 8;
             // 
-            // textBox3
+            // txtAge
             // 
-            this.textBox3.Location = new System.Drawing.Point(72, 176);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(175, 22);
-            this.textBox3.TabIndex = 9;
+            this.txtAge.Location = new System.Drawing.Point(72, 176);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(175, 22);
+            this.txtAge.TabIndex = 9;
             // 
-            // textBox4
+            // txtFirstName
             // 
-            this.textBox4.Location = new System.Drawing.Point(263, 109);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(175, 22);
-            this.textBox4.TabIndex = 10;
+            this.txtFirstName.Location = new System.Drawing.Point(263, 109);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(175, 22);
+            this.txtFirstName.TabIndex = 10;
             // 
-            // textBox5
+            // txtContactNo
             // 
-            this.textBox5.Location = new System.Drawing.Point(263, 176);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(175, 22);
-            this.textBox5.TabIndex = 11;
+            this.txtContactNo.Location = new System.Drawing.Point(263, 176);
+            this.txtContactNo.Name = "txtContactNo";
+            this.txtContactNo.Size = new System.Drawing.Size(175, 22);
+            this.txtContactNo.TabIndex = 11;
             // 
-            // textBox6
+            // txtMiddleName
             // 
-            this.textBox6.Location = new System.Drawing.Point(451, 109);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(175, 22);
-            this.textBox6.TabIndex = 12;
+            this.txtMiddleName.Location = new System.Drawing.Point(451, 109);
+            this.txtMiddleName.Name = "txtMiddleName";
+            this.txtMiddleName.Size = new System.Drawing.Size(175, 22);
+            this.txtMiddleName.TabIndex = 12;
             // 
-            // comboBox1
+            // Program
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(263, 49);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 13;
+            this.Program.FormattingEnabled = true;
+            this.Program.Items.AddRange(new object[] {
+            "Bachelor of Science in Information Technology",
+            "Bachelor of Science in Hospitality Management",
+            "Bachelor of Science in Business Administration",
+            "Bachelor of Science in Accountancy"});
+            this.Program.Location = new System.Drawing.Point(263, 49);
+            this.Program.Name = "Program";
+            this.Program.Size = new System.Drawing.Size(363, 24);
+            this.Program.TabIndex = 13;
             // 
             // label8
             // 
@@ -169,13 +174,13 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Address:";
             // 
-            // textBox7
+            // txtAddress
             // 
-            this.textBox7.Location = new System.Drawing.Point(72, 236);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(554, 125);
-            this.textBox7.TabIndex = 15;
+            this.txtAddress.Location = new System.Drawing.Point(72, 236);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(554, 125);
+            this.txtAddress.TabIndex = 15;
             // 
             // btnNext
             // 
@@ -185,6 +190,7 @@
             this.btnNext.TabIndex = 16;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // Form1
             // 
@@ -192,21 +198,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Program);
+            this.Controls.Add(this.txtMiddleName);
+            this.Controls.Add(this.txtContactNo);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtStudentNo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "FrmRegistration";
@@ -218,21 +224,21 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtStudentNo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtContactNo;
+        private System.Windows.Forms.TextBox txtMiddleName;
+        private System.Windows.Forms.ComboBox Program;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Button btnNext;
     }
 }
