@@ -12,9 +12,7 @@ namespace AccountRegistration
 {
     public partial class FrmConfirm : Form
     {
-        private StudentInfoClass.DelegateText DelProgram, DelLastName, DelFirstName, DelMiddleName, DelAddress;
-        private StudentInfoClass.DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
-
+       
         private void lblProgram_Click(object sender, EventArgs e)
         {
 
@@ -28,24 +26,19 @@ namespace AccountRegistration
         public FrmConfirm()
         {
             InitializeComponent();
-            DelProgram = new StudentInfoClass.DelegateText(StudentInfoClass.GetProgram);
-            DelLastName = new StudentInfoClass.DelegateText(StudentInfoClass.GetLastName);
-            DelFirstName = new StudentInfoClass.DelegateText(StudentInfoClass.GetFirstName);
-            DelMiddleName = new StudentInfoClass.DelegateText(StudentInfoClass.GetMiddleName);
-            DelAddress = new StudentInfoClass.DelegateText(StudentInfoClass.GetAddress);
-
-            DelNumAge = new StudentInfoClass.DelegateNumber(StudentInfoClass.GetAge);
-            DelNumContactNo = new StudentInfoClass.DelegateNumber(StudentInfoClass.GetContactNo);
-            DelStudNo = new StudentInfoClass.DelegateNumber(StudentInfoClass.GetStudentNo);
+           
         }
         private void FrmConfirm_Load(object sender, EventArgs e)
         {
-            lblProgram1.Text = DelProgram(StudentInfoClass.Program);
-            lblFirstName1.Text = DelFirstName(StudentInfoClass.FirstName);
-            lblAddress1.Text = DelAddress(StudentInfoClass.Address);
-            lblAge1.Text = DelNumAge(StudentInfoClass.Age).ToString();
-            lblContactNo1.Text = DelNumContactNo(StudentInfoClass.ContactNo).ToString();
-            lblStudentNo1.Text = DelStudNo(StudentInfoClass.StudentNo).ToString();
+            lblStudentNo.Text = StudentInfoClass.SetStudentNo.ToString();
+            lblName.Text = StudentInfoClass.SetFullName;
+            lblProgram.Text = StudentInfoClass.SetProgram;
+            lblBirthday.Text = StudentInfoClass.SetBirthday;
+            lblGender.Text = StudentInfoClass.SetGender;
+            lblContactNo.Text = StudentInfoClass.SetContactNo.ToString();
+            lblAge.Text = StudentInfoClass.SetAge.ToString();
+
+
         }
         private void btnSumbit_Click(object sender, EventArgs e)
         {

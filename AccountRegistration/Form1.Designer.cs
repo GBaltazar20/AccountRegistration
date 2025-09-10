@@ -42,12 +42,12 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtContactNo = new System.Windows.Forms.TextBox();
             this.txtMiddleName = new System.Windows.Forms.TextBox();
-            this.Program = new System.Windows.Forms.ComboBox();
+            this.cbProgram = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbGender = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.datePickerBirthday = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -189,20 +189,15 @@
             this.txtMiddleName.Size = new System.Drawing.Size(132, 20);
             this.txtMiddleName.TabIndex = 12;
             // 
-            // Program
+            // cbProgram
             // 
-            this.Program.FormattingEnabled = true;
-            this.Program.Items.AddRange(new object[] {
-            "Bachelor of Science in Information Technology",
-            "Bachelor of Science in Hospitality Management",
-            "Bachelor of Science in Business Administration",
-            "Bachelor of Science in Accountancy"});
-            this.Program.Location = new System.Drawing.Point(197, 40);
-            this.Program.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Program.Name = "Program";
-            this.Program.Size = new System.Drawing.Size(273, 21);
-            this.Program.TabIndex = 13;
-            this.Program.SelectedIndexChanged += new System.EventHandler(this.Program_SelectedIndexChanged);
+            this.cbProgram.FormattingEnabled = true;
+            this.cbProgram.Location = new System.Drawing.Point(197, 40);
+            this.cbProgram.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbProgram.Name = "cbProgram";
+            this.cbProgram.Size = new System.Drawing.Size(273, 21);
+            this.cbProgram.TabIndex = 13;
+            this.cbProgram.SelectedIndexChanged += new System.EventHandler(this.Program_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -228,13 +223,16 @@
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // comboBox1
+            // cbGender
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(215, 144);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(71, 21);
-            this.comboBox1.TabIndex = 17;
+            this.cbGender.FormattingEnabled = true;
+            this.cbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cbGender.Location = new System.Drawing.Point(215, 144);
+            this.cbGender.Name = "cbGender";
+            this.cbGender.Size = new System.Drawing.Size(71, 21);
+            this.cbGender.TabIndex = 17;
             // 
             // label2
             // 
@@ -248,12 +246,12 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Birthday";
             // 
-            // dateTimePicker1
+            // datePickerBirthday
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(54, 206);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 19;
+            this.datePickerBirthday.Location = new System.Drawing.Point(54, 206);
+            this.datePickerBirthday.Name = "datePickerBirthday";
+            this.datePickerBirthday.Size = new System.Drawing.Size(200, 20);
+            this.datePickerBirthday.TabIndex = 19;
             // 
             // Form1
             // 
@@ -262,12 +260,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(503, 292);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.datePickerBirthday);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbGender);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.Program);
+            this.Controls.Add(this.cbProgram);
             this.Controls.Add(this.txtMiddleName);
             this.Controls.Add(this.txtContactNo);
             this.Controls.Add(this.txtFirstName);
@@ -284,6 +282,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "FrmRegistration";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,12 +303,12 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtContactNo;
         private System.Windows.Forms.TextBox txtMiddleName;
-        private System.Windows.Forms.ComboBox Program;
+        private System.Windows.Forms.ComboBox cbProgram;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker datePickerBirthday;
     }
 }
 

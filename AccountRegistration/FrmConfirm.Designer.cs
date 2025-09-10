@@ -38,7 +38,7 @@
             this.btnSumbit = new System.Windows.Forms.Button();
             this.lblStudentNo1 = new System.Windows.Forms.Label();
             this.lblProgram1 = new System.Windows.Forms.Label();
-            this.lblFirstName1 = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblAge1 = new System.Windows.Forms.Label();
             this.lblContactNo1 = new System.Windows.Forms.Label();
             this.lblBirthday = new System.Windows.Forms.Label();
@@ -163,18 +163,18 @@
             this.lblProgram1.TabIndex = 10;
             this.lblProgram1.Text = "label2";
             // 
-            // lblFirstName1
+            // lblName
             // 
-            this.lblFirstName1.AutoSize = true;
-            this.lblFirstName1.BackColor = System.Drawing.Color.Transparent;
-            this.lblFirstName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName1.ForeColor = System.Drawing.Color.White;
-            this.lblFirstName1.Location = new System.Drawing.Point(121, 76);
-            this.lblFirstName1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblFirstName1.Name = "lblFirstName1";
-            this.lblFirstName1.Size = new System.Drawing.Size(41, 13);
-            this.lblFirstName1.TabIndex = 12;
-            this.lblFirstName1.Text = "label4";
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(121, 76);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(41, 13);
+            this.lblName.TabIndex = 12;
+            this.lblName.Text = "label4";
             // 
             // lblAge1
             // 
@@ -250,7 +250,7 @@
             this.Controls.Add(this.lblBirthday);
             this.Controls.Add(this.lblContactNo1);
             this.Controls.Add(this.lblAge1);
-            this.Controls.Add(this.lblFirstName1);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblProgram1);
             this.Controls.Add(this.lblStudentNo1);
             this.Controls.Add(this.btnSumbit);
@@ -280,7 +280,7 @@
         private System.Windows.Forms.Button btnSumbit;
         private System.Windows.Forms.Label lblStudentNo1;
         private System.Windows.Forms.Label lblProgram1;
-        private System.Windows.Forms.Label lblFirstName1;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblAge1;
         private System.Windows.Forms.Label lblContactNo1;
         private System.Windows.Forms.Label lblBirthday;

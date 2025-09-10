@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -21,31 +21,42 @@ namespace AccountRegistration
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            StudentInfoClass.Program = Program.Text;
-            StudentInfoClass.FirstName = txtLastName.Text + ", " + txtFirstName.Text + " " + txtMiddleName.Text;
-            StudentInfoClass.Address = txtAddress.Text;
-            StudentInfoClass.Age = Convert.ToInt64(txtAge.Text);
-            StudentInfoClass.ContactNo = Convert.ToInt64(txtContactNo.Text);
-            StudentInfoClass.StudentNo = Convert.ToInt64(txtStudentNo.Text);
+            StudentInfoClass.SetProgram = cbProgram.Text;
+            StudentInfoClass.SetFullName = txtLastName.Text + ", " + txtFirstName.Text + " " + txtMiddleName.Text;
+            StudentInfoClass.SetAge = Convert.ToInt64(txtAge.Text);
+            StudentInfoClass.SetContactNo = Convert.ToInt64(txtContactNo.Text);
+            StudentInfoClass.SetStudentNo = Convert.ToInt64(txtStudentNo.Text);
+            StudentInfoClass.SetGender = cbGender.Text;
+            StudentInfoClass.SetBirthday = datePickerBirthday.Value.ToString("yyyy-MM-dd");
+
 
             FrmConfirm confirmForm = new FrmConfirm();
-            
-            if (confirmForm.ShowDialog() == DialogResult.OK)
-            {
-                txtFirstName.Clear();
-                txtLastName.Clear();
-                txtMiddleName.Clear();
-                txtAddress.Clear();
-                txtAge.Clear();
-                txtContactNo.Clear();
-                txtStudentNo.Clear();
-                Program.SelectedIndex = -1;
-            }
+
+            confirmForm.ShowDialog();
         }
 
         private void Program_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string[] ListOfProgram = new string[]{
+                "BS Information Technology",
+                "BS Computer Science",
+                "BS Information Systems",
+                "BS in Accountancy",
+                "BS in Hospitality Management",
+                "BS in Tourism Management"
+            };
+
+            
+ 
+          for (int i = 0; i < 6; i++)
+          {
+                cbProgram.Items.Add(ListOfProgram[i].ToString());
+          }
         }
     }
 }
