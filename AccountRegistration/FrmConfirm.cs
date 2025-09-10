@@ -30,13 +30,13 @@ namespace AccountRegistration
         }
         private void FrmConfirm_Load(object sender, EventArgs e)
         {
-            lblStudentNo.Text = StudentInfoClass.SetStudentNo.ToString();
+            lblStudentNo1.Text = StudentInfoClass.SetStudentNo.ToString();
             lblName.Text = StudentInfoClass.SetFullName;
-            lblProgram.Text = StudentInfoClass.SetProgram;
+            lblProgram1.Text = StudentInfoClass.SetProgram;
             lblBirthday.Text = StudentInfoClass.SetBirthday;
             lblGender.Text = StudentInfoClass.SetGender;
-            lblContactNo.Text = StudentInfoClass.SetContactNo.ToString();
-            lblAge.Text = StudentInfoClass.SetAge.ToString();
+            lblContactNo1.Text = StudentInfoClass.SetContactNo.ToString();
+            lblAge1.Text = StudentInfoClass.SetAge.ToString();
 
 
         }
@@ -48,6 +48,11 @@ namespace AccountRegistration
         private void FrmConfirm_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.DialogResult = DialogResult.OK;
+        }
+
+        private void lblStudentNo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

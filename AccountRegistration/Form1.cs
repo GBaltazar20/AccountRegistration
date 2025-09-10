@@ -21,20 +21,26 @@ namespace AccountRegistration
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            StudentInfoClass.SetProgram = cbProgram.Text;
-            StudentInfoClass.SetFullName = txtLastName.Text + ", " + txtFirstName.Text + " " + txtMiddleName.Text;
-            StudentInfoClass.SetAge = Convert.ToInt64(txtAge.Text);
-            StudentInfoClass.SetContactNo = Convert.ToInt64(txtContactNo.Text);
-            StudentInfoClass.SetStudentNo = Convert.ToInt64(txtStudentNo.Text);
-            StudentInfoClass.SetGender = cbGender.Text;
-            StudentInfoClass.SetBirthday = datePickerBirthday.Value.ToString("yyyy-MM-dd");
+            try
+            {
+                StudentInfoClass.SetProgram = cbProgram.Text;
+                StudentInfoClass.SetFullName = txtLastName.Text + ", " + txtFirstName.Text + " " + txtMiddleName.Text;
+                StudentInfoClass.SetAge = Convert.ToInt64(txtAge.Text);
+                StudentInfoClass.SetContactNo = Convert.ToInt64(txtContactNo.Text);
+                StudentInfoClass.SetStudentNo = Convert.ToInt64(txtStudentNo.Text);
+                StudentInfoClass.SetGender = cbGender.Text;
+                StudentInfoClass.SetBirthday = datePickerBirthday.Value.ToString("yyyy-MM-dd");
 
 
-            FrmConfirm confirmForm = new FrmConfirm();
+                FrmConfirm confirmForm = new FrmConfirm();
 
-            confirmForm.ShowDialog();
+                confirmForm.ShowDialog();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("")
+            }
         }
-
         private void Program_SelectedIndexChanged(object sender, EventArgs e)
         {
 

@@ -58,6 +58,7 @@
             this.lblStudentNo.Size = new System.Drawing.Size(75, 13);
             this.lblStudentNo.TabIndex = 0;
             this.lblStudentNo.Text = "Student No:";
+            this.lblStudentNo.Click += new System.EventHandler(this.lblStudentNo_Click);
             // 
             // lblProgram
             // 
