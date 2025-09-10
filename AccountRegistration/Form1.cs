@@ -22,9 +22,7 @@ namespace AccountRegistration
         private void btnNext_Click(object sender, EventArgs e)
         {
             StudentInfoClass.Program = Program.Text;
-            StudentInfoClass.FirstName = txtFirstName.Text;
-            StudentInfoClass.LastName = txtLastName.Text;
-            StudentInfoClass.MiddleName = txtMiddleName.Text;
+            StudentInfoClass.FirstName = txtLastName.Text + ", " + txtFirstName.Text + " " + txtMiddleName.Text;
             StudentInfoClass.Address = txtAddress.Text;
             StudentInfoClass.Age = Convert.ToInt64(txtAge.Text);
             StudentInfoClass.ContactNo = Convert.ToInt64(txtContactNo.Text);
@@ -43,6 +41,11 @@ namespace AccountRegistration
                 txtStudentNo.Clear();
                 Program.SelectedIndex = -1;
             }
+        }
+
+        private void Program_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

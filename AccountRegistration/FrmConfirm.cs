@@ -14,6 +14,17 @@ namespace AccountRegistration
     {
         private StudentInfoClass.DelegateText DelProgram, DelLastName, DelFirstName, DelMiddleName, DelAddress;
         private StudentInfoClass.DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
+
+        private void lblProgram_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblStudentNo1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public FrmConfirm()
         {
             InitializeComponent();
@@ -30,9 +41,7 @@ namespace AccountRegistration
         private void FrmConfirm_Load(object sender, EventArgs e)
         {
             lblProgram1.Text = DelProgram(StudentInfoClass.Program);
-            lblLastName1.Text = DelLastName(StudentInfoClass.LastName);
             lblFirstName1.Text = DelFirstName(StudentInfoClass.FirstName);
-            lblMiddleName1.Text = DelMiddleName(StudentInfoClass.MiddleName);
             lblAddress1.Text = DelAddress(StudentInfoClass.Address);
             lblAge1.Text = DelNumAge(StudentInfoClass.Age).ToString();
             lblContactNo1.Text = DelNumContactNo(StudentInfoClass.ContactNo).ToString();
